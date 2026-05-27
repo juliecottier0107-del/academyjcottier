@@ -223,6 +223,99 @@ footer{background:#060402;padding:52px 80px;border-top:1px solid rgba(201,169,11
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
 .fu{animation:fadeUp .8s ease both;}
 .d1{animation-delay:.1s;}.d2{animation-delay:.2s;}.d3{animation-delay:.35s;}.d4{animation-delay:.5s;}
+
+/* ── RESPONSIVE MOBILE ── */
+@media (max-width: 768px) {
+
+  /* NAV mobile */
+  nav{padding:0 20px;height:60px;}
+  .nav-links{display:none;}
+  .nav-brand{font-size:15px;}
+  .nav-cta{font-size:9px;padding:8px 14px;letter-spacing:1px;}
+
+  /* HERO mobile — colonne unique */
+  .hero{grid-template-columns:1fr;min-height:auto;}
+  .hero-l{padding:60px 28px 48px;}
+  .h-titre{font-size:48px;letter-spacing:-2px;}
+  .h-sub{font-size:13px;max-width:100%;}
+  .h-btns{flex-direction:column;gap:10px;}
+  .btn-or,.btn-ol{width:100%;justify-content:center;padding:14px 20px;font-size:11px;}
+  .h-nums{gap:20px;}
+  .h-nv{font-size:28px;}
+  .h-nl{font-size:9px;}
+  /* Photo hero cachée sur mobile — remplacée par fond */
+  .hero-r{height:280px;}
+  .hero-r img{object-position:center 15%;}
+  .hero-badge{bottom:16px;right:16px;left:16px;padding:12px 14px;}
+  .hb-t{font-size:11px;}
+  .hb-s{font-size:9px;}
+
+  /* SECTIONS */
+  section{padding:60px 24px;}
+  .s-titre{font-size:36px;letter-spacing:-1px;}
+  .s-sub{font-size:13px;max-width:100%;margin-bottom:36px;}
+
+  /* PILIERS — une colonne */
+  .piliers{grid-template-columns:1fr;}
+  .pilier{padding:36px 28px;}
+  .pilier-titre{font-size:22px;}
+
+  /* FORMATIONS — une colonne */
+  .formations-grid{grid-template-columns:1fr;}
+  .formation{padding:32px 24px;}
+
+  /* CONSULTING — une colonne */
+  .consulting-grid{grid-template-columns:1fr;gap:16px;}
+  .consulting-card{padding:28px 22px;}
+
+  /* SPAPILOT — une colonne */
+  .spapilot-bloc{grid-template-columns:1fr;gap:40px;padding:60px 24px;}
+  .sp-titre{font-size:52px;}
+  .sp-kpis{grid-template-columns:1fr 1fr;}
+
+  /* POURQUOI — une colonne */
+  .pourquoi-grid{grid-template-columns:1fr;}
+  .pq-chiffre{padding:20px;}
+  .pq-val{font-size:36px;min-width:80px;}
+  .pq-citation{font-size:18px;}
+
+  /* ABOUT — une colonne */
+  .about{grid-template-columns:1fr;}
+  .about-photo{height:320px;}
+  .about-photo img{object-position:center 10%;}
+  .about-photo::after{background:linear-gradient(180deg,transparent 60%,var(--bg));}
+  .about-txt{padding:40px 28px;}
+  .about-nom{font-size:36px;}
+
+  /* QUALIOPI */
+  .qualiopi-band{flex-direction:column;gap:20px;padding:36px 24px;text-align:center;}
+
+  /* CTA */
+  .s-cta{padding:72px 24px;}
+  .cta-titre{font-size:38px;letter-spacing:-1px;}
+  .cta-sub{font-size:13px;}
+  .cta-btns{flex-direction:column;align-items:center;gap:10px;}
+  .cta-btns .btn-or,.cta-btns .btn-ol{width:100%;max-width:320px;justify-content:center;}
+
+  /* FOOTER */
+  footer{padding:40px 24px;}
+  .footer-top{grid-template-columns:1fr;gap:28px;}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+  .footer-legal{justify-content:center;flex-wrap:wrap;gap:12px;}
+
+  /* MODAL */
+  .modal{padding:32px 24px;margin:16px;}
+}
+
+@media (max-width: 480px) {
+  .h-titre{font-size:40px;}
+  .s-titre{font-size:30px;}
+  .sp-titre{font-size:44px;}
+  .sp-kpis{grid-template-columns:1fr;}
+  .h-nums{gap:14px;}
+  .h-nv{font-size:24px;}
+}
+
 </style>
 </head>
 <body>
